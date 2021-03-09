@@ -9,15 +9,16 @@ function renderLicenseBadge(license) {
   return licenseObj[license];
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+//  function that returns the license link, If there is no license, return an empty string
 function renderLicenseLink(license) {
   linkObj = {
     MIT: "(https://opensource.org/licenses/MIT)",
     Apache: "(https://opensource.org/licenses/Apache-2.0)",
   }
-  return linkObj[license];
+  if (linkObj[license]) return linkObj[license];
+  return "";
 }
+
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
@@ -25,25 +26,57 @@ function renderLicenseSection(license) {
   const fs = require('fs'); 
 
   try {
-    const data = fs.readFileSync(`./${license}.txt`, 'utf8') //'./MIT.txt'
+    const data = fs.readFileSync(`./${license}.txt`, 'utf8')
     return data;
   } catch (err) {
-    console.error(err)
+    return ""
   }
 }
-
-//  fs.readFile(`./${license}.txt`, 'utf8', (data) => { 
-//     // if (err){ console.log(err);}
-//     return data; 
-//        })
-        
-//       }
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   
   return `
+  #${data.title}
+
+  ## Table of Contents
+  ---
+  * [Description](#description)
+  * [Installation](#installation)
+  * [Tests](#tests)
+  * [Usage](#usage)
+  * [Contributing](#contributing)
+  * [Questions](#questions)
+  * [License](#license)
+
+  ## Description
+  ---
+  ${data.description}
+
+  ## Installation
+  ---
+  ${data.installation}
+
+  ## Tests
+  ---
+  ${data.tests}
+
+  ## Usage
+  ---
+  ${data.usage}
+
+  ## Contributing
+  ---
+  ${data.contributing}
+
+  ## Questions
+  ---
+  ${data.questions}
+
+  ## License
+  ---
   ${renderLicenseBadge(data.license)}${renderLicenseLink(data.license)}
+
   ${renderLicenseSection(data.license)}
 `
 ;
