@@ -6,11 +6,11 @@ const generateMarkdown = require('./generateMarkdown');
 
 // array of questions for user input
 const questions = [
-    'Title?','Description: Please describe this project?', 'Installation: What are the required steps to install?', 'Usage: What is it supposed to be used for?', 'Contributing: How can others contribute?', 'Tests: What tests should be run before using this tool?', 'Questions: Where should a user turn with questions...enter your Github username?', 'Pick your license below:'
+    'Title?','Description: Please describe this project?', 'Installation: What are the required steps to install?', 'Usage: What is it supposed to be used for?', 'Contributing: How can others contribute?', 'Tests: What tests should be run before using this tool?', 'Questions: Where should a user turn with questions...enter your Github username?', 'Pick your license below:',"What's your email"
 ];
 
 // array of answer names for user input
-const names = ['title','description', 'installation', 'usage', 'contributing', 'tests', 'questions', 'license'];
+const names = ['title','description', 'installation', 'usage', 'contributing', 'tests', 'questions', 'license', 'email'];
 
 function init() { // function to initialize app, then write readme file
 
@@ -52,20 +52,20 @@ function init() { // function to initialize app, then write readme file
                     name: names[6]
                 },
                 {
-                    type: 'input',
+                    type: 'rawlist',
                     message: questions[7],
-                    name: names[7]
+                    name: names[7],
+                    choices: ['MIT', 'Apache']
                 },
                 {
-                    type: 'rawlist',
+                    type: 'input',
                     message: questions[8],
                     name: names[8],
-                    choices: ['MIT', 'Apache']
                 },
             ])
         .then((answers) => {  //taking the answers as one large object
 
-            fs.writeFile('new.md', generateMarkdown(answers), function (err) {  //writing the markdown file
+            fs.writeFile('README.md', generateMarkdown(answers), function (err) {  //writing the markdown file
                 if (err) return console.log(err);
             })
         })
