@@ -15,6 +15,8 @@
   ---
   This is an automatic readme generator that helps the tired coder automatically put together a full readme at the end of their project. By the way, this readme was made with this tool!
 
+![Page Preview](https://raw.githubusercontent.com/CodeWarrior-debug/hw9-so-automatic-readme-node.js/main/README%20Preview.png)
+
   ## Installation
   ---
   To install, it’s best to follow the steps in the video. Briefly, install node.js if you do not have it on your computer, fork and clone this repository, open your terminal, install the inquirer package, change directories into the root folder of the included index.js file, then run the command “node index”. Fill out the prompts, see your new.md markdown file, rename it as you prefer, and you’re good to go!
