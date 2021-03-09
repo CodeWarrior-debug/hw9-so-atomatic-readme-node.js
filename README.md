@@ -28,11 +28,13 @@
   ## Usage
   ---
   Take a look at this video for how to use it once installed 
-  <iframe src="https://drive.google.com/file/d/1Awv5uqa4xtxKLN6U4VD8B3KrhOnEFsj0/view?usp=sharing" width="640" height="480"></iframe>
+  https://drive.google.com/file/d/1Awv5uqa4xtxKLN6U4VD8B3KrhOnEFsj0/view?usp=sharing
 
   ## Contributing
   ---
-  Author: James Jordan (CodeWarrior-debug) - Starter Code provided by Trilogy Education Services - Synchronous code help provided by https://nodejs.dev/learn/reading-files-with-nodejs
+  Author: James Jordan (CodeWarrior-debug) 
+  Starter Code provided by Trilogy Education Services
+  Synchronous code help provided by https://nodejs.dev/learn/reading-files-with-nodejs
 
   ## Questions
   ---
