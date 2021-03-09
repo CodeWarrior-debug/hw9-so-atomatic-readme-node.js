@@ -25,7 +25,8 @@
 
   ## Usage
   ---
-  Take a look at this video for how to use it once installed à![ReadMe Maker Demo](https://drive.google.com/file/d/17RKonG4hUCs2OG1P1tLICI8U2yTHDBZq/view)
+  Take a look at this video for how to use it once installed 
+  <iframe src="https://drive.google.com/file/d/17RKonG4hUCs2OG1P1tLICI8U2yTHDBZq/preview" width="640" height="480"></iframe>
 
   ## Contributing
   ---
