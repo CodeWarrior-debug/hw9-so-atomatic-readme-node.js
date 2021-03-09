@@ -71,7 +71,7 @@ function generateMarkdown(data) {
 
   ## Questions
   ---
-  ${data.questions}
+  https://github.com/${data.questions}
 
   ## License
   ---

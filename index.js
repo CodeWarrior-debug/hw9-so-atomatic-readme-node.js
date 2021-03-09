@@ -6,7 +6,7 @@ const generateMarkdown = require('./generateMarkdown');
 
 // array of questions for user input
 const questions = [
-    'Title?','Description: Please describe this project?', 'Installation: What are the required steps to install?', 'Usage: What is it supposed to be used for?', 'Contributing: How can others contribute?', 'Tests: What tests should be run before using this tool?', 'Questions: Where should a user turn with questions?', 'Pick your license below:'
+    'Title?','Description: Please describe this project?', 'Installation: What are the required steps to install?', 'Usage: What is it supposed to be used for?', 'Contributing: How can others contribute?', 'Tests: What tests should be run before using this tool?', 'Questions: Where should a user turn with questions...enter your Github username?', 'Pick your license below:'
 ];
 
 // array of answer names for user input
