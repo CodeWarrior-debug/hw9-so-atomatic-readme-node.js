@@ -26,7 +26,7 @@
   ## Usage
   ---
   Take a look at this video for how to use it once installed 
-  <iframe src="https://drive.google.com/file/d/17RKonG4hUCs2OG1P1tLICI8U2yTHDBZq/preview" width="640" height="480"></iframe>
+  <iframe src="https://drive.google.com/file/d/1Awv5uqa4xtxKLN6U4VD8B3KrhOnEFsj0/view?usp=sharing" width="640" height="480"></iframe>
 
   ## Contributing
   ---

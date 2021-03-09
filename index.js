@@ -6,7 +6,7 @@ const generateMarkdown = require('./generateMarkdown');
 
 // array of questions for user input
 const questions = [
-    'Title?','Description: Please describe this project?', 'Installation: What are the required steps to install?', 'Usage: What is it supposed to be used for?', 'Contributing: How can others contribute?', 'Tests: What tests should be run before using this tool?', 'Questions: Where should a user turn with questions...enter your Github username?', 'Pick your license below:',"What's your email"
+    'Title?','Description: Please describe this project?', 'Installation: What are the required steps to install?', 'Usage: What is it supposed to be used for?', 'Contributing: Who contributed, and how can others contribute?', 'Tests: What tests should be run before using this tool?', 'Questions: Where should a user turn with questions...enter your Github username?', 'Pick your license below:',"What's your email?"
 ];
 
 // array of answer names for user input
@@ -15,7 +15,7 @@ const names = ['title','description', 'installation', 'usage', 'contributing', '
 function init() { // function to initialize app, then write readme file
 
     inquirer
-        .prompt(                                //listing all possible questions
+        .prompt(                                //listing all questions
             [{
                     type: 'input',
                     message: questions[0],
